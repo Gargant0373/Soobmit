@@ -16,21 +16,8 @@ function Submit() {
     const [progress, setProgress] = useState<{ [key: string]: number }>({});
     const [uploadedFiles, setUploadedFiles] = useState<string[]>([]);
 
-    const validateIp = (ip: string) => {
-        if (!ip) return false;
-        if (ip === "localhost") return true;
-        const parts = ip.split(".");
-        if (parts.length !== 4) return false;
-        return parts.every((part) => Number(part) >= 0 && Number(part) <= 255);
-    };
-
     const handleSubmit = async () => {
         setStatus(Status.PENDING);
-        if (!validateIp(ip)) {
-            setStatus(Status.FAILURE);
-            alert("Invalid IP address");
-            return;
-        }
         try {
             await pingIp(ip);
             setStatus(Status.SUCCESS);
