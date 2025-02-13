@@ -39,7 +39,6 @@ function Submit() {
             return;
         }
 
-        setStatus(Status.PENDING);
         let newUploadedFiles: string[] = [];
 
         for (const file of files) {
