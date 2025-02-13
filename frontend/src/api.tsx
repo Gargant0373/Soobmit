@@ -7,7 +7,7 @@ import axios from "axios";
  */
 export const pingIp = async (ip: string): Promise<string> => {
     try {
-        const response = await axios.get(`https://${ip}/ping`);
+        const response = await axios.get(`${ip}/ping`);
         if (response.status === 200) {
             return "IP is reachable";
         }
@@ -29,7 +29,7 @@ export const uploadFile = async (ip: string, file: File, onUploadProgress: (prog
         const formData = new FormData();
         formData.append("file", file);
 
-        const response = await axios.post(`https://${ip}/upload`, formData, {
+        const response = await axios.post(`${ip}/upload`, formData, {
             headers: {
                 "Content-Type": "multipart/form-data",
             },
