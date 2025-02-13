@@ -105,12 +105,10 @@ function Submit() {
                         <div className="progress-container">
                             {files.map((file) => (
                                 <div key={file.name} className="progress-wrapper">
-                                    <p>{file.name}</p>
                                     <div className="progress-bar">
-                                        <div
-                                            className="progress"
-                                            style={{ width: `${progress[file.name] || 0}%` }}
-                                        ></div>
+                                        <div className="progress">
+                                            Uploading: {progress[file.name] || 0}%
+                                        </div>
                                     </div>
                                 </div>
                             ))}

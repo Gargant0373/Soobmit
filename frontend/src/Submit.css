@@ -31,6 +31,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 5px;
+  height: 100px;
 }
 
 .animated-char {
@@ -118,19 +119,9 @@ button:active {
 }
 
 .progress-container {
-  width: 100%;
   height: 20px;
-  background-color: #000000;
-  border: 3px solid #000000;
   margin: 10px 0;
   position: relative;
-}
-
-.progress {
-  height: 100%;
-  width: 0%;
-  background-color: #FF0000;
-  transition: width 0.3s ease-in-out;
 }
 
 .uploaded-files h3 {
