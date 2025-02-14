@@ -3,26 +3,58 @@ import { pingIp, uploadFile } from "./api";
 import "./Submit.css";
 
 enum Status {
-    IDLE,
-    PENDING,
+    START,
+    PINGING,
+    UPLOADING,
     SUCCESS,
     FAILURE,
 }
 
 function Submit() {
     const [ip, setIp] = useState("");
-    const [status, setStatus] = useState(Status.IDLE);
+    const [status, setStatus] = useState(Status.START);
     const [files, setFiles] = useState<File[]>([]);
     const [progress, setProgress] = useState<{ [key: string]: number }>({});
     const [uploadedFiles, setUploadedFiles] = useState<string[]>([]);
 
+    const [uploadMessages, setUploadMessages] = useState<{ [filename: string]: string }>({});
+    const [lastProgressThreshold, setLastProgressThreshold] = useState<{ [filename: string]: number }>({});
+    const [lastMessageUpdateTime, setLastMessageUpdateTime] = useState<{ [filename: string]: number }>({});
+
+    const randomMessages = [
+        "Setting up cookie factory...",
+        "Taking a break...",
+        "Drinking a beer...",
+        "Doing stuff... or something...",
+        "Recalibrating quantum array...",
+        "Feeding the hamsters..."
+    ];
+
+    function getRandomMessage() {
+        return randomMessages[Math.floor(Math.random() * randomMessages.length)];
+    }
+
+
+    const uploadScreen = () => {
+        switch (status) {
+            case Status.START:
+            case Status.PINGING:
+                return false;
+            case Status.UPLOADING:
+            case Status.SUCCESS:
+            case Status.FAILURE:
+                return true;
+        }
+    };
+
     const handleSubmit = async () => {
-        setStatus(Status.PENDING);
+        if (status === Status.PINGING) return;
+        setStatus(Status.PINGING);
         try {
             await pingIp(ip);
-            setStatus(Status.SUCCESS);
+            setStatus(Status.UPLOADING);
         } catch (error) {
-            setStatus(Status.FAILURE);
+            setStatus(Status.START);
             alert("IP is not reachable");
         }
     };
@@ -40,6 +72,11 @@ function Submit() {
         }
 
         let newUploadedFiles: string[] = [];
+
+        for (const file of files) {
+            setLastProgressThreshold(prev => ({ ...prev, [file.name]: 0 }));
+            setLastMessageUpdateTime(prev => ({ ...prev, [file.name]: Date.now() }));
+        }
 
         for (const file of files) {
             try {
@@ -68,7 +105,7 @@ function Submit() {
                     </span>
                 ))}
             </div>
-            {Status.SUCCESS !== status && (
+            {!uploadScreen() && (
                 <div className="form">
                     <input
                         type="text"
@@ -76,12 +113,12 @@ function Submit() {
                         onChange={(e) => setIp(e.target.value)}
                         placeholder="Enter IP address"
                     />
-                    <button onClick={handleSubmit} disabled={Status.PENDING === status}>
-                        {Status.PENDING === status ? "LOADING" : "SUBMIT"}
+                    <button onClick={handleSubmit} disabled={Status.PINGING === status}>
+                        {Status.PINGING === status ? "LOADING" : "SUBMIT"}
                     </button>
                 </div>
             )}
-            {Status.SUCCESS === status && (
+            {uploadScreen() && (
                 <div className="upload">
                     <input id="file-upload" type="file" multiple onChange={handleFileChange} />
                     <label htmlFor="file-upload">SELECT FILES</label>

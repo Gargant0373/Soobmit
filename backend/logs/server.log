@@ -1,0 +1,44 @@
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-14T11:29:05.979Z"}
+{"level":"info","message":"Received /ping request","timestamp":"2025-02-14T11:31:03.723Z"}
+{"level":"info","message":"File upload request for: HOUSEWARMING(1).png","timestamp":"2025-02-14T11:31:11.115Z"}
+{"level":"info","message":"Storing file as: 1739532671115.png","timestamp":"2025-02-14T11:31:11.116Z"}
+{"level":"info","message":"File uploaded successfully: 1739532671115.png","timestamp":"2025-02-14T11:31:11.149Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-14T11:32:27.611Z"}
+{"level":"info","message":"File upload request for: HOUSEWARMING(1).png","timestamp":"2025-02-14T11:32:37.279Z"}
+{"level":"info","message":"Storing file as: function toLocaleString() { [native code] }_HOUSEWARMING(1).png","timestamp":"2025-02-14T11:32:37.280Z"}
+{"level":"info","message":"File uploaded successfully: function toLocaleString() { [native code] }_HOUSEWARMING(1).png","timestamp":"2025-02-14T11:32:37.310Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-14T11:32:49.781Z"}
+{"level":"info","message":"File upload request for: HOUSEWARMING(1).png","timestamp":"2025-02-14T11:32:53.236Z"}
+{"level":"info","message":"Storing file as: 1,739,532,773,236_HOUSEWARMING(1).png","timestamp":"2025-02-14T11:32:53.253Z"}
+{"level":"info","message":"File uploaded successfully: 1,739,532,773,236_HOUSEWARMING(1).png","timestamp":"2025-02-14T11:32:53.283Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-14T11:33:31.571Z"}
+{"level":"info","message":"File upload request for: HOUSEWARMING(1).png","timestamp":"2025-02-14T11:33:34.837Z"}
+{"level":"info","message":"Storing file as: 2025-2-14_HOUSEWARMING(1).png","timestamp":"2025-02-14T11:33:34.837Z"}
+{"level":"info","message":"File uploaded successfully: 2025-2-14_HOUSEWARMING(1).png","timestamp":"2025-02-14T11:33:34.869Z"}
+{"level":"info","message":"File upload request for: sandi.mp4","timestamp":"2025-02-14T11:34:40.806Z"}
+{"level":"info","message":"Storing file as: 2025-2-14_sandi.mp4","timestamp":"2025-02-14T11:34:40.806Z"}
+{"level":"info","message":"File uploaded successfully: 2025-2-14_sandi.mp4","timestamp":"2025-02-14T11:34:41.655Z"}
+{"level":"info","message":"Received /ping request","timestamp":"2025-02-14T11:36:17.568Z"}
+{"level":"info","message":"Received /ping request","timestamp":"2025-02-14T11:42:23.159Z"}
+{"level":"info","message":"Received /ping request","timestamp":"2025-02-14T11:42:26.372Z"}
+{"level":"info","message":"Received /ping request","timestamp":"2025-02-14T11:42:27.193Z"}
+{"level":"info","message":"Received /ping request","timestamp":"2025-02-14T11:42:45.204Z"}
+{"level":"info","message":"Received /ping request","timestamp":"2025-02-14T11:42:50.098Z"}
+{"level":"info","message":"Received /ping request","timestamp":"2025-02-14T11:42:58.079Z"}
+{"level":"info","message":"Received /ping request","timestamp":"2025-02-14T11:43:59.817Z"}
+{"level":"info","message":"File upload request for: Screenshot from 2025-02-14 11-42-55.png","timestamp":"2025-02-14T11:44:03.878Z"}
+{"level":"info","message":"Storing file as: 2025-2-14_Screenshot from 2025-02-14 11-42-55.png","timestamp":"2025-02-14T11:44:03.878Z"}
+{"level":"info","message":"File uploaded successfully: 2025-2-14_Screenshot from 2025-02-14 11-42-55.png","timestamp":"2025-02-14T11:44:03.881Z"}
+{"level":"info","message":"File upload request for: Screenshot from 2025-02-14 11-44-31.png","timestamp":"2025-02-14T11:44:03.887Z"}
+{"level":"info","message":"Storing file as: 2025-2-14_Screenshot from 2025-02-14 11-44-31.png","timestamp":"2025-02-14T11:44:03.887Z"}
+{"level":"info","message":"File uploaded successfully: 2025-2-14_Screenshot from 2025-02-14 11-44-31.png","timestamp":"2025-02-14T11:44:03.890Z"}
+{"level":"info","message":"File upload request for: Screenshot from 2025-02-14 12-11-28.png","timestamp":"2025-02-14T11:44:03.895Z"}
+{"level":"info","message":"Storing file as: 2025-2-14_Screenshot from 2025-02-14 12-11-28.png","timestamp":"2025-02-14T11:44:03.895Z"}
+{"level":"info","message":"File uploaded successfully: 2025-2-14_Screenshot from 2025-02-14 12-11-28.png","timestamp":"2025-02-14T11:44:03.907Z"}
+{"level":"info","message":"Received /ping request","timestamp":"2025-02-14T11:44:24.363Z"}
+{"level":"info","message":"File upload request for: movie (1).mp4","timestamp":"2025-02-14T11:45:09.069Z"}
+{"level":"info","message":"Storing file as: 2025-2-14_movie (1).mp4","timestamp":"2025-02-14T11:45:09.069Z"}
+{"level":"info","message":"File uploaded successfully: 2025-2-14_movie (1).mp4","timestamp":"2025-02-14T11:45:09.429Z"}
+{"level":"info","message":"File upload request for: o viata in 2.zip","timestamp":"2025-02-14T11:45:34.821Z"}
+{"level":"info","message":"Storing file as: 2025-2-14_o viata in 2.zip","timestamp":"2025-02-14T11:45:34.821Z"}
+{"level":"info","message":"File uploaded successfully: 2025-2-14_o viata in 2.zip","timestamp":"2025-02-14T11:46:22.031Z"}
