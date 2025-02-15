@@ -7,15 +7,18 @@ body {
   padding: 0;
   min-height: 99vh;
 
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
 @keyframes highlight {
-  0%, 100% {
+
+  0%,
+  100% {
     font-size: 2rem;
     color: black;
   }
+
   30% {
     font-size: 2.2rem;
     color: red;
@@ -39,13 +42,33 @@ body {
   animation: highlight 3s infinite;
 }
 
-.char-0 { animation-delay: 0s; }
-.char-1 { animation-delay: 0.4s; }
-.char-2 { animation-delay: 0.6s; }
-.char-3 { animation-delay: 0.8s; }
-.char-4 { animation-delay: 1s; }
-.char-5 { animation-delay: 1.2s; }
-.char-6 { animation-delay: 1.4s; }
+.char-0 {
+  animation-delay: 0s;
+}
+
+.char-1 {
+  animation-delay: 0.4s;
+}
+
+.char-2 {
+  animation-delay: 0.6s;
+}
+
+.char-3 {
+  animation-delay: 0.8s;
+}
+
+.char-4 {
+  animation-delay: 1s;
+}
+
+.char-5 {
+  animation-delay: 1.2s;
+}
+
+.char-6 {
+  animation-delay: 1.4s;
+}
 
 .form {
   display: flex;
@@ -145,4 +168,35 @@ button:active {
 
 .uploaded-files li:last-child {
   border-bottom: none;
+}
+
+.selected-files {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.selected-files li {
+  font-weight: 400;
+  list-style-type: none;
+  text-wrap: wrap;
+
+  border-bottom: 1px solid #FF0000;
+  transition: all 0.3s;
+}
+
+.selected-files li:hover {
+  background-color: #FF0000;
+  color: #ffffff;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.selected-files ul {
+  padding: 0;
+  margin: 0;
 }

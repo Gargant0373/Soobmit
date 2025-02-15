@@ -42,3 +42,18 @@
 {"level":"info","message":"File upload request for: o viata in 2.zip","timestamp":"2025-02-14T11:45:34.821Z"}
 {"level":"info","message":"Storing file as: 2025-2-14_o viata in 2.zip","timestamp":"2025-02-14T11:45:34.821Z"}
 {"level":"info","message":"File uploaded successfully: 2025-2-14_o viata in 2.zip","timestamp":"2025-02-14T11:46:22.031Z"}
+{"level":"info","message":"Received /ping request","timestamp":"2025-02-14T11:50:27.527Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-15T22:07:26.696Z"}
+{"level":"info","message":"Received /ping request","timestamp":"2025-02-15T22:07:57.320Z"}
+{"level":"info","message":"Received /ping request","timestamp":"2025-02-15T22:08:35.928Z"}
+{"level":"info","message":"Received /ping request","timestamp":"2025-02-15T22:09:42.620Z"}
+{"level":"info","message":"File upload request for: Screenshot from 2025-02-14 11-42-55.png","timestamp":"2025-02-15T22:09:55.370Z"}
+{"level":"info","message":"Storing file as: 2025-2-15_Screenshot from 2025-02-14 11-42-55.png","timestamp":"2025-02-15T22:09:55.371Z"}
+{"level":"info","message":"File uploaded successfully: 2025-2-15_Screenshot from 2025-02-14 11-42-55.png","timestamp":"2025-02-15T22:09:55.376Z"}
+{"level":"info","message":"File upload request for: Screenshot from 2025-02-14 11-44-31.png","timestamp":"2025-02-15T22:09:55.393Z"}
+{"level":"info","message":"Storing file as: 2025-2-15_Screenshot from 2025-02-14 11-44-31.png","timestamp":"2025-02-15T22:09:55.393Z"}
+{"level":"info","message":"File uploaded successfully: 2025-2-15_Screenshot from 2025-02-14 11-44-31.png","timestamp":"2025-02-15T22:09:55.397Z"}
+{"level":"info","message":"File upload request for: Screenshot from 2025-02-14 12-11-28.png","timestamp":"2025-02-15T22:09:55.408Z"}
+{"level":"info","message":"Storing file as: 2025-2-15_Screenshot from 2025-02-14 12-11-28.png","timestamp":"2025-02-15T22:09:55.408Z"}
+{"level":"info","message":"File uploaded successfully: 2025-2-15_Screenshot from 2025-02-14 12-11-28.png","timestamp":"2025-02-15T22:09:55.412Z"}
+{"level":"info","message":"Received /ping request","timestamp":"2025-02-15T22:25:03.408Z"}

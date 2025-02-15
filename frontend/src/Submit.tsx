@@ -10,6 +10,20 @@ enum Status {
     FAILURE,
 }
 
+const randomMessages = [
+    "Setting up cookie factory...",
+    "Taking a break...",
+    "Drinking a beer...",
+    "Doing stuff... or something...",
+    "Recalibrating quantum array...",
+    "Feeding the hamsters...",
+];
+
+function getRandomMessage() {
+    const index = Math.floor(Math.random() * randomMessages.length);
+    return randomMessages[index];
+}
+
 function Submit() {
     const [ip, setIp] = useState("");
     const [status, setStatus] = useState(Status.START);
@@ -17,23 +31,11 @@ function Submit() {
     const [progress, setProgress] = useState<{ [key: string]: number }>({});
     const [uploadedFiles, setUploadedFiles] = useState<string[]>([]);
 
-    const [uploadMessages, setUploadMessages] = useState<{ [filename: string]: string }>({});
-    const [lastProgressThreshold, setLastProgressThreshold] = useState<{ [filename: string]: number }>({});
-    const [lastMessageUpdateTime, setLastMessageUpdateTime] = useState<{ [filename: string]: number }>({});
-
-    const randomMessages = [
-        "Setting up cookie factory...",
-        "Taking a break...",
-        "Drinking a beer...",
-        "Doing stuff... or something...",
-        "Recalibrating quantum array...",
-        "Feeding the hamsters..."
-    ];
-
-    function getRandomMessage() {
-        return randomMessages[Math.floor(Math.random() * randomMessages.length)];
-    }
-
+    // New states for a SINGLE upload message and overall progress
+    const [uploadMessage, setUploadMessage] = useState("");
+    const [overallProgress, setOverallProgress] = useState(0);
+    const [lastOverallProgress, setLastOverallProgress] = useState(0);
+    const [lastMessageUpdateTime, setLastMessageUpdateTime] = useState(Date.now());
 
     const uploadScreen = () => {
         switch (status) {
@@ -52,7 +54,12 @@ function Submit() {
         setStatus(Status.PINGING);
         try {
             await pingIp(ip);
-            setStatus(Status.UPLOADING);
+            setStatus(Status.SUCCESS);
+            // Optionally reset the message & progress states
+            setUploadMessage(getRandomMessage());
+            setOverallProgress(0);
+            setLastOverallProgress(0);
+            setLastMessageUpdateTime(Date.now());
         } catch (error) {
             setStatus(Status.START);
             alert("IP is not reachable");
@@ -65,23 +72,56 @@ function Submit() {
         }
     };
 
+    const calculateOverallProgress = (newProgress: { [key: string]: number }) => {
+        if (files.length === 0) return 0;
+        const totalBytes = files.reduce((acc, file) => acc + file.size, 0);
+
+        let uploadedBytes = 0;
+        for (const file of files) {
+            const fileProgressPercent = newProgress[file.name] || 0;
+            const fileUploadedBytes = (file.size * fileProgressPercent) / 100;
+            uploadedBytes += fileUploadedBytes;
+        }
+
+        const overall = (uploadedBytes / totalBytes) * 100;
+        return Math.floor(overall);
+    };
+
+    const updateUploadMessageIfNeeded = (newOverallProgress: number) => {
+        const now = Date.now();
+        const timeDiff = now - lastMessageUpdateTime;
+        const progressDiff = newOverallProgress - lastOverallProgress;
+
+        const hasCrossedFivePercent = progressDiff >= 5;
+        const hasThreeSecondsPassed = timeDiff >= 3000;
+
+        if (hasCrossedFivePercent || hasThreeSecondsPassed) {
+            setUploadMessage(getRandomMessage());
+            setLastMessageUpdateTime(now);
+            setLastOverallProgress(newOverallProgress);
+        }
+    };
+
     const handleUpload = async () => {
         if (files.length === 0) {
             alert("No files selected.");
             return;
         }
 
-        let newUploadedFiles: string[] = [];
+        setStatus(Status.UPLOADING);
 
-        for (const file of files) {
-            setLastProgressThreshold(prev => ({ ...prev, [file.name]: 0 }));
-            setLastMessageUpdateTime(prev => ({ ...prev, [file.name]: Date.now() }));
-        }
+        let newUploadedFiles: string[] = [];
 
         for (const file of files) {
             try {
                 await uploadFile(ip, file, (progressValue) => {
-                    setProgress((prev) => ({ ...prev, [file.name]: progressValue }));
+                    setProgress((prev) => {
+                        const updated = { ...prev, [file.name]: progressValue };
+                        const overall = calculateOverallProgress(updated);
+                        setOverallProgress(overall);
+                        updateUploadMessageIfNeeded(overall);
+                        return updated;
+                    });
                 });
 
                 newUploadedFiles.push(file.name);
@@ -93,8 +133,14 @@ function Submit() {
         setUploadedFiles((prevFiles) => [...prevFiles, ...newUploadedFiles]);
         setFiles([]);
         setProgress({});
+        setOverallProgress(100);
+        updateUploadMessageIfNeeded(100);
         setStatus(Status.SUCCESS);
     };
+
+    const removeFile = (file: File) => {
+        setFiles((prevFiles) => prevFiles.filter((f) => f !== file));
+    }
 
     return (
         <>
@@ -105,6 +151,7 @@ function Submit() {
                     </span>
                 ))}
             </div>
+
             {!uploadScreen() && (
                 <div className="form">
                     <input
@@ -118,39 +165,39 @@ function Submit() {
                     </button>
                 </div>
             )}
+
             {uploadScreen() && (
                 <div className="upload">
                     <input id="file-upload" type="file" multiple onChange={handleFileChange} />
                     <label htmlFor="file-upload">SELECT FILES</label>
 
                     {files.length > 0 && (
-                        <div>
+                        <div className="selected-files">
                             <p>Selected Files:</p>
                             <ul>
                                 {files.map((file, index) => (
-                                    <li key={index}>{file.name}</li>
+                                    <li onClick={() => removeFile(file)} key={index}>{file.name}</li>
                                 ))}
                             </ul>
                         </div>
                     )}
 
-                    {files.length > 0 && (
-                        <button onClick={handleUpload}>UPLOAD</button>
-                    )}
+                    {files.length > 0 && <button onClick={handleUpload}>UPLOAD</button>}
 
-                    {Object.keys(progress).length > 0 && (
+                    {status === Status.UPLOADING ? (
                         <div className="progress-container">
-                            {files.map((file) => (
-                                <div key={file.name} className="progress-wrapper">
-                                    <div className="progress-bar">
-                                        <div className="progress">
-                                            Uploading: {progress[file.name] || 0}%
-                                        </div>
+                            <div className="progress-wrapper">
+                                <div className="progress-bar">
+                                    <div className="progress">
+                                        Overall Progress: {overallProgress}%
                                     </div>
                                 </div>
-                            ))}
+                            </div>
+                            <p style={{ marginTop: 10 }}>
+                                {uploadMessage || "Preparing upload..."}
+                            </p>
                         </div>
-                    )}
+                    ) : null}
 
                     {uploadedFiles.length > 0 && (
                         <div className="uploaded-files">
