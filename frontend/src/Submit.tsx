@@ -28,6 +28,8 @@ function Submit() {
     const [ip, setIp] = useState("");
     const [status, setStatus] = useState(Status.START);
     const [files, setFiles] = useState<File[]>([]);
+    // @ts-ignore
+    const [progress, setProgress] = useState<{ [key: string]: number }>({});
     const [uploadedFiles, setUploadedFiles] = useState<string[]>([]);
 
     const [uploadMessage, setUploadMessage] = useState("");
