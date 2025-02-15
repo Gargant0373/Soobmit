@@ -28,10 +28,8 @@ function Submit() {
     const [ip, setIp] = useState("");
     const [status, setStatus] = useState(Status.START);
     const [files, setFiles] = useState<File[]>([]);
-    const [progress, setProgress] = useState<{ [key: string]: number }>({});
     const [uploadedFiles, setUploadedFiles] = useState<string[]>([]);
 
-    // New states for a SINGLE upload message and overall progress
     const [uploadMessage, setUploadMessage] = useState("");
     const [overallProgress, setOverallProgress] = useState(0);
     const [lastOverallProgress, setLastOverallProgress] = useState(0);
