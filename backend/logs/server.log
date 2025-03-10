@@ -73,3 +73,106 @@
 {"level":"info","message":"File upload request for: 20250227_174213.mp4","timestamp":"2025-02-27T16:15:49.641Z"}
 {"level":"info","message":"Storing file as: 2025-2-27_20250227_174213.mp4","timestamp":"2025-02-27T16:15:49.642Z"}
 {"level":"info","message":"File uploaded successfully: 2025-2-27_20250227_174213.mp4","timestamp":"2025-02-27T16:16:27.272Z"}
+{"level":"info","message":"File upload request for: IMG_5451.mov","timestamp":"2025-02-27T16:35:01.276Z"}
+{"level":"info","message":"Storing file as: 2025-2-27_IMG_5451.mov","timestamp":"2025-02-27T16:35:01.278Z"}
+{"level":"info","message":"File upload request for: IMG_5451.mov","timestamp":"2025-02-27T16:36:58.019Z"}
+{"level":"info","message":"Storing file as: 2025-2-27_IMG_5451.mov","timestamp":"2025-02-27T16:36:58.020Z"}
+{"level":"info","message":"File uploaded successfully: 2025-2-27_IMG_5451.mov","timestamp":"2025-02-27T16:39:08.141Z"}
+{"level":"info","message":"File upload request for: IMG_5454.mov","timestamp":"2025-02-27T16:40:08.859Z"}
+{"level":"info","message":"Storing file as: 2025-2-27_IMG_5454.mov","timestamp":"2025-02-27T16:40:08.859Z"}
+{"level":"info","message":"File upload request for: IMG_5454.mov","timestamp":"2025-02-27T16:57:50.361Z"}
+{"level":"info","message":"Storing file as: 2025-2-27_IMG_5454.mov","timestamp":"2025-02-27T16:57:50.361Z"}
+{"level":"info","message":"File uploaded successfully: 2025-2-27_IMG_5454.mov","timestamp":"2025-02-27T17:00:00.494Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-03-02T11:27:04.651Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-03-03T16:29:52.963Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-03-03T16:30:12.486Z"}
+{"level":"info","message":"File upload request for: PXL_20250303_153946901.mp4","timestamp":"2025-03-03T16:36:16.268Z"}
+{"level":"info","message":"Storing file as: 2025-3-3_PXL_20250303_153946901.mp4","timestamp":"2025-03-03T16:36:16.268Z"}
+{"level":"info","message":"File uploaded successfully: 2025-3-3_PXL_20250303_153946901.mp4","timestamp":"2025-03-03T16:36:22.184Z"}
+{"level":"info","message":"File upload request for: PXL_20250303_153920094.mp4","timestamp":"2025-03-03T16:36:22.483Z"}
+{"level":"info","message":"Storing file as: 2025-3-3_PXL_20250303_153920094.mp4","timestamp":"2025-03-03T16:36:22.483Z"}
+{"level":"info","message":"File uploaded successfully: 2025-3-3_PXL_20250303_153920094.mp4","timestamp":"2025-03-03T16:36:29.349Z"}
+{"level":"info","message":"File upload request for: IMG_5832.MOV","timestamp":"2025-03-03T16:38:05.402Z"}
+{"level":"info","message":"Storing file as: 2025-3-3_IMG_5832.MOV","timestamp":"2025-03-03T16:38:05.403Z"}
+{"level":"info","message":"File uploaded successfully: 2025-3-3_IMG_5832.MOV","timestamp":"2025-03-03T16:38:28.334Z"}
+{"level":"info","message":"File upload request for: IMG_5832.mp4","timestamp":"2025-03-03T16:55:24.685Z"}
+{"level":"info","message":"Storing file as: 2025-3-3_IMG_5832.mp4","timestamp":"2025-03-03T16:55:24.686Z"}
+{"level":"info","message":"File uploaded successfully: 2025-3-3_IMG_5832.mp4","timestamp":"2025-03-03T16:55:29.136Z"}
+{"level":"info","message":"File upload request for: IMG_0535.mov","timestamp":"2025-03-03T18:23:44.667Z"}
+{"level":"info","message":"Storing file as: 2025-3-3_IMG_0535.mov","timestamp":"2025-03-03T18:23:44.667Z"}
+{"level":"info","message":"File uploaded successfully: 2025-3-3_IMG_0535.mov","timestamp":"2025-03-03T18:24:06.599Z"}
+{"level":"info","message":"File upload request for: F1CC5934-5919-4360-9E41-A6ACC1FA43F0.mov","timestamp":"2025-03-03T18:24:36.006Z"}
+{"level":"info","message":"Storing file as: 2025-3-3_F1CC5934-5919-4360-9E41-A6ACC1FA43F0.mov","timestamp":"2025-03-03T18:24:36.007Z"}
+{"level":"info","message":"File uploaded successfully: 2025-3-3_F1CC5934-5919-4360-9E41-A6ACC1FA43F0.mov","timestamp":"2025-03-03T18:24:36.840Z"}
+{"level":"info","message":"File upload request for: IMG_1117.jpeg","timestamp":"2025-03-03T18:26:15.136Z"}
+{"level":"info","message":"Storing file as: 2025-3-3_IMG_1117.jpeg","timestamp":"2025-03-03T18:26:15.136Z"}
+{"level":"info","message":"File uploaded successfully: 2025-3-3_IMG_1117.jpeg","timestamp":"2025-03-03T18:26:15.916Z"}
+{"level":"info","message":"File upload request for: f448963b-7b8d-4451-a80b-93d6f33e0de9.mp4","timestamp":"2025-03-03T18:26:41.969Z"}
+{"level":"info","message":"Storing file as: 2025-3-3_f448963b-7b8d-4451-a80b-93d6f33e0de9.mp4","timestamp":"2025-03-03T18:26:41.970Z"}
+{"level":"info","message":"File uploaded successfully: 2025-3-3_f448963b-7b8d-4451-a80b-93d6f33e0de9.mp4","timestamp":"2025-03-03T18:26:42.387Z"}
+{"level":"info","message":"File upload request for: IMG_0766.jpeg","timestamp":"2025-03-03T18:27:05.845Z"}
+{"level":"info","message":"Storing file as: 2025-3-3_IMG_0766.jpeg","timestamp":"2025-03-03T18:27:05.846Z"}
+{"level":"info","message":"File uploaded successfully: 2025-3-3_IMG_0766.jpeg","timestamp":"2025-03-03T18:27:06.024Z"}
+{"level":"info","message":"File upload request for: IMG_1219.jpeg","timestamp":"2025-03-03T18:27:52.003Z"}
+{"level":"info","message":"Storing file as: 2025-3-3_IMG_1219.jpeg","timestamp":"2025-03-03T18:27:52.003Z"}
+{"level":"info","message":"File uploaded successfully: 2025-3-3_IMG_1219.jpeg","timestamp":"2025-03-03T18:27:52.495Z"}
+{"level":"info","message":"File upload request for: IMG_0537.mov","timestamp":"2025-03-03T18:30:59.153Z"}
+{"level":"info","message":"Storing file as: 2025-3-3_IMG_0537.mov","timestamp":"2025-03-03T18:30:59.153Z"}
+{"level":"info","message":"File uploaded successfully: 2025-3-3_IMG_0537.mov","timestamp":"2025-03-03T18:31:17.300Z"}
+{"level":"info","message":"File upload request for: IMG_2542.jpeg","timestamp":"2025-03-03T18:35:19.461Z"}
+{"level":"info","message":"Storing file as: 2025-3-3_IMG_2542.jpeg","timestamp":"2025-03-03T18:35:19.461Z"}
+{"level":"info","message":"File uploaded successfully: 2025-3-3_IMG_2542.jpeg","timestamp":"2025-03-03T18:35:19.812Z"}
+{"level":"info","message":"File upload request for: IMG_0488.mov","timestamp":"2025-03-03T18:36:13.111Z"}
+{"level":"info","message":"Storing file as: 2025-3-3_IMG_0488.mov","timestamp":"2025-03-03T18:36:13.112Z"}
+{"level":"info","message":"File uploaded successfully: 2025-3-3_IMG_0488.mov","timestamp":"2025-03-03T18:36:15.670Z"}
+{"level":"info","message":"File upload request for: IMG_0504.mov","timestamp":"2025-03-03T18:37:25.339Z"}
+{"level":"info","message":"Storing file as: 2025-3-3_IMG_0504.mov","timestamp":"2025-03-03T18:37:25.339Z"}
+{"level":"info","message":"File uploaded successfully: 2025-3-3_IMG_0504.mov","timestamp":"2025-03-03T18:37:30.863Z"}
+{"level":"info","message":"File upload request for: Imagini de arhivÄ .m4a","timestamp":"2025-03-03T18:42:52.790Z"}
+{"level":"info","message":"Storing file as: 2025-3-3_Imagini de arhivÄ .m4a","timestamp":"2025-03-03T18:42:52.790Z"}
+{"level":"info","message":"File uploaded successfully: 2025-3-3_Imagini de arhivÄ .m4a","timestamp":"2025-03-03T18:42:52.889Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-03-05T11:29:11.263Z"}
+{"level":"info","message":"File upload request for: IMG_0281.mov","timestamp":"2025-03-05T11:39:49.907Z"}
+{"level":"info","message":"Storing file as: 2025-3-5_IMG_0281.mov","timestamp":"2025-03-05T11:39:49.908Z"}
+{"level":"info","message":"File uploaded successfully: 2025-3-5_IMG_0281.mov","timestamp":"2025-03-05T11:40:06.072Z"}
+{"level":"info","message":"File upload request for: IMG_5858.mov","timestamp":"2025-03-05T12:25:57.010Z"}
+{"level":"info","message":"Storing file as: 2025-3-5_IMG_5858.mov","timestamp":"2025-03-05T12:25:57.011Z"}
+{"level":"info","message":"File uploaded successfully: 2025-3-5_IMG_5858.mov","timestamp":"2025-03-05T12:26:07.641Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-03-05T16:07:15.398Z"}
+{"level":"info","message":"File upload request for: Ziua claudiei video.mp4","timestamp":"2025-03-05T19:12:23.809Z"}
+{"level":"info","message":"Storing file as: 2025-3-5_Ziua claudiei video.mp4","timestamp":"2025-03-05T19:12:23.810Z"}
+{"level":"info","message":"File uploaded successfully: 2025-3-5_Ziua claudiei video.mp4","timestamp":"2025-03-05T19:12:31.304Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-03-08T13:54:23.705Z"}
+{"level":"info","message":"File upload request for: IMG_5530.mov","timestamp":"2025-03-08T14:00:23.342Z"}
+{"level":"info","message":"Storing file as: 2025-3-8_IMG_5530.mov","timestamp":"2025-03-08T14:00:23.343Z"}
+{"level":"info","message":"File uploaded successfully: 2025-3-8_IMG_5530.mov","timestamp":"2025-03-08T14:00:29.177Z"}
+{"level":"info","message":"File upload request for: IMG_5663.mov","timestamp":"2025-03-08T14:06:13.951Z"}
+{"level":"info","message":"Storing file as: 2025-3-8_IMG_5663.mov","timestamp":"2025-03-08T14:06:13.952Z"}
+{"level":"info","message":"File uploaded successfully: 2025-3-8_IMG_5663.mov","timestamp":"2025-03-08T14:06:39.664Z"}
+{"level":"info","message":"File upload request for: IMG_5659.mov","timestamp":"2025-03-08T14:06:39.879Z"}
+{"level":"info","message":"Storing file as: 2025-3-8_IMG_5659.mov","timestamp":"2025-03-08T14:06:39.879Z"}
+{"level":"info","message":"File uploaded successfully: 2025-3-8_IMG_5659.mov","timestamp":"2025-03-08T14:06:41.034Z"}
+{"level":"info","message":"File upload request for: IMG_5648.mov","timestamp":"2025-03-08T14:06:41.158Z"}
+{"level":"info","message":"Storing file as: 2025-3-8_IMG_5648.mov","timestamp":"2025-03-08T14:06:41.159Z"}
+{"level":"info","message":"File uploaded successfully: 2025-3-8_IMG_5648.mov","timestamp":"2025-03-08T14:06:43.188Z"}
+{"level":"info","message":"File upload request for: IMG_5620.mov","timestamp":"2025-03-08T14:06:43.304Z"}
+{"level":"info","message":"Storing file as: 2025-3-8_IMG_5620.mov","timestamp":"2025-03-08T14:06:43.304Z"}
+{"level":"info","message":"File uploaded successfully: 2025-3-8_IMG_5620.mov","timestamp":"2025-03-08T14:06:48.034Z"}
+{"level":"info","message":"File upload request for: IMG_5612.mov","timestamp":"2025-03-08T14:06:48.242Z"}
+{"level":"info","message":"Storing file as: 2025-3-8_IMG_5612.mov","timestamp":"2025-03-08T14:06:48.242Z"}
+{"level":"info","message":"File uploaded successfully: 2025-3-8_IMG_5612.mov","timestamp":"2025-03-08T14:06:49.785Z"}
+{"level":"info","message":"File upload request for: IMG_1324.mov","timestamp":"2025-03-08T14:31:11.102Z"}
+{"level":"info","message":"Storing file as: 2025-3-8_IMG_1324.mov","timestamp":"2025-03-08T14:31:11.102Z"}
+{"level":"info","message":"File uploaded successfully: 2025-3-8_IMG_1324.mov","timestamp":"2025-03-08T14:31:17.230Z"}
+{"level":"info","message":"File upload request for: IMG_1325.mov","timestamp":"2025-03-08T14:31:17.558Z"}
+{"level":"info","message":"Storing file as: 2025-3-8_IMG_1325.mov","timestamp":"2025-03-08T14:31:17.558Z"}
+{"level":"info","message":"File uploaded successfully: 2025-3-8_IMG_1325.mov","timestamp":"2025-03-08T14:31:28.503Z"}
+{"level":"info","message":"File upload request for: IMG_1327.mov","timestamp":"2025-03-08T14:31:28.700Z"}
+{"level":"info","message":"Storing file as: 2025-3-8_IMG_1327.mov","timestamp":"2025-03-08T14:31:28.700Z"}
+{"level":"info","message":"File uploaded successfully: 2025-3-8_IMG_1327.mov","timestamp":"2025-03-08T14:31:35.761Z"}
+{"level":"info","message":"File upload request for: IMG_6115.mov","timestamp":"2025-03-08T15:41:33.582Z"}
+{"level":"info","message":"Storing file as: 2025-3-8_IMG_6115.mov","timestamp":"2025-03-08T15:41:33.582Z"}
+{"level":"info","message":"File uploaded successfully: 2025-3-8_IMG_6115.mov","timestamp":"2025-03-08T15:41:38.487Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-03-10T11:23:01.386Z"}
+{"level":"info","message":"File upload request for: IMG_4799.mov","timestamp":"2025-03-10T13:58:57.063Z"}
+{"level":"info","message":"Storing file as: 2025-3-10_IMG_4799.mov","timestamp":"2025-03-10T13:58:57.064Z"}

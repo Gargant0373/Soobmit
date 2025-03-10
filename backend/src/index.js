@@ -10,8 +10,8 @@ const PORT = 3000;
 
 app.use(cors());
 
-// const uploadDir = path.join(__dirname, "..", "uploads");
-const uploadDir = "/media/valentin-puternic/DISCUL TARE/";
+const uploadDir = path.join(__dirname, "..", "uploads");
+// const uploadDir = "/media/valentin-puternic/DISCUL TARE/";
 
 if (!fs.existsSync(uploadDir)) {
     fs.mkdirSync(uploadDir, { recursive: true });
